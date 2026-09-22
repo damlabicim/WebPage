@@ -1,560 +1,290 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
-    span.s1 {font-kerning: none}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Stack Technologies — High-Power Laser Systems</title>
+<meta name="description" content="Light Stack Technologies engineers high-power laser systems for fusion research, directed-energy programs, and precision beam-control platforms.">
+
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt; &lt;head&gt; &lt;meta charset="UTF-8" /&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
-<p class="p1"><span class="s1">&lt;title&gt;Light Stack Technologies | Engineering the Future of Light&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="description" content="Light Stack Technologies engineers advanced photonics, precision beam control, thermal systems, and high-performance optical platforms." /&gt;</span></p>
-<p class="p1"><span class="s1">&lt;style&gt; :root { --black: #050505; --black-soft: #0a0a0a; --panel: #0d0e0e; --panel-light: #111313; --line: rgba(255, 255, 255, 0.11); --line-bright: rgba(255, 255, 255, 0.2); --white: #f5f6f2; --muted: #9b9f9b; --muted-dark: #676b67; --lime: #d9ff3f; --lime-soft: rgba(217, 255, 63, 0.12); --lime-glow: rgba(217, 255, 63, 0.35); --max-width: 1440px; --nav-height: 82px; --ease: cubic-bezier(0.22, 1, 0.36, 1); } * { box-sizing: border-box; margin: 0; padding: 0; } html { scroll-behavior: smooth; background: var(--black); } body { background: var(--black); color: var(--white); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; overflow-x: hidden; -webkit-font-smoothing: antialiased; } body.menu-open { overflow: hidden; } a { color: inherit; text-decoration: none; } button, a { -webkit-tap-highlight-color: transparent; } img { max-width: 100%; display: block; } ::selection { background: var(--lime); color: #000; } /* ------------------------------ GLOBAL ------------------------------ */ .container { width: min(calc(100% - 48px), var(--max-width)); margin: 0 auto; } .section { position: relative; padding: 140px 0; overflow: hidden; } .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--lime); font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; } .eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--lime); box-shadow: 0 0 12px var(--lime-glow); } .section-title { max-width: 850px; margin-top: 22px; font-size: clamp(42px, 6vw, 88px); font-weight: 500; letter-spacing: -0.055em; line-height: 0.95; } .section-copy { max-width: 620px; margin-top: 28px; color: var(--muted); font-size: 17px; line-height: 1.8; } .button { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 0 21px; border: 1px solid transparent; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; transition: transform 0.3s var(--ease), background 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease); } .button::after { content: "↗"; font-size: 15px; transition: transform 0.3s var(--ease); } .button:hover { transform: translateY(-2px); } .button:hover::after { transform: translate(3px, -3px); } .button-primary { background: var(--lime); color: #050505; } .button-primary:hover { background: #efffa3; box-shadow: 0 10px 40px rgba(217, 255, 63, 0.16); } .button-secondary { border-color: var(--line-bright); color: var(--white); } .button-secondary:hover { border-color: var(--lime); color: var(--lime); } .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; } /* ------------------------------ NAVIGATION ------------------------------ */ .site-nav { position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; height: var(--nav-height); border-bottom: 1px solid transparent; transition: background 0.35s ease, border-color 0.35s ease, backdrop-filter 0.35s ease; } .site-nav.scrolled { background: rgba(5, 5, 5, 0.78); border-color: var(--line); backdrop-filter: blur(18px); } .nav-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 30px; } .brand { display: inline-flex; align-items: center; gap: 12px; flex-shrink: 0; } .brand-mark { position: relative; width: 30px; height: 30px; display: grid; place-items: center; } .brand-mark::before, .brand-mark::after { content: ""; position: absolute; border: 1px solid var(--lime); transform: rotate(45deg); } .brand-mark::before { width: 17px; height: 17px; } .brand-mark::after { width: 7px; height: 7px; background: var(--lime); box-shadow: 0 0 18px var(--lime-glow); } .brand-name { font-size: 13px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; } .nav-links { display: flex; align-items: center; gap: 30px; margin-left: auto; } .nav-links a { position: relative; color: #b7bbb7; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.25s ease; } .nav-links a::after { content: ""; position: absolute; right: 0; bottom: -8px; left: 0; height: 1px; background: var(--lime); transform: scaleX(0); transform-origin: right; transition: transform 0.3s var(--ease); } .nav-links a:hover { color: var(--white); } .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; } .nav-cta { margin-left: 12px; min-height: 42px; padding-inline: 17px; font-size: 10px; } .mobile-toggle { display: none; width: 44px; height: 44px; border: 1px solid var(--line); background: transparent; color: var(--white); cursor: pointer; } .mobile-toggle span, .mobile-toggle span::before, .mobile-toggle span::after { display: block; width: 18px; height: 1px; background: currentColor; margin: auto; transition: transform 0.3s ease; } .mobile-toggle span::before, .mobile-toggle span::after { content: ""; position: relative; } .mobile-toggle span::before { top: -6px; } .mobile-toggle span::after { top: 5px; } /* ------------------------------ HERO ------------------------------ */ .hero { position: relative; min-height: 100svh; display: flex; align-items: center; overflow: hidden; border-bottom: 1px solid var(--line); background: radial-gradient( circle at 68% 46%, rgba(217, 255, 63, 0.08), transparent 25% ), radial-gradient( circle at 75% 42%, rgba(255, 255, 255, 0.05), transparent 18% ), var(--black); } .hero-grid { position: absolute; inset: 0; opacity: 0.4; background-image: linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px); background-size: 80px 80px; mask-image: linear-gradient( to bottom, transparent, black 15%, black 75%, transparent ); } .hero-vignette { position: absolute; inset: 0; background: linear-gradient( 90deg, var(--black) 0%, rgba(5, 5, 5, 0.86) 35%, rgba(5, 5, 5, 0.2) 72%, var(--black) 100% ), linear-gradient( 0deg, var(--black) 0%, transparent 25%, transparent 75%, var(--black) 100% ); pointer-events: none; } .hero-orb { position: absolute; width: min(42vw, 650px); aspect-ratio: 1; right: 3%; top: 50%; transform: translateY(-50%); border-radius: 50%; background: radial-gradient( circle at center, rgba(239, 255, 140, 0.95) 0, rgba(217, 255, 63, 0.75) 1.5%, rgba(217, 255, 63, 0.15) 9%, rgba(217, 255, 63, 0.03) 23%, transparent 58% ); filter: blur(1px); opacity: 0.9; pointer-events: none; } .hero-orb::before, .hero-orb::after { content: ""; position: absolute; inset: 12%; border: 1px solid rgba(217, 255, 63, 0.18); border-radius: 50%; } .hero-orb::after { inset: 26%; border-color: rgba(217, 255, 63, 0.3); box-shadow: 0 0 80px rgba(217, 255, 63, 0.1), inset 0 0 80px rgba(217, 255, 63, 0.06); } .hero-ring { position: absolute; right: 7%; top: 50%; width: min(34vw, 530px); aspect-ratio: 1; transform: translateY(-50%) rotate(-20deg); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 50%; box-shadow: 0 0 0 1px rgba(217, 255, 63, 0.025), 0 0 70px rgba(217, 255, 63, 0.06); pointer-events: none; } .hero-ring::before { content: ""; position: absolute; inset: 9%; border: 1px dashed rgba(217, 255, 63, 0.2); border-radius: 50%; animation: spin 35s linear infinite; } .hero-content { position: relative; z-index: 2; width: 100%; padding-top: calc(var(--nav-height) + 45px); padding-bottom: 80px; } .hero-copy { max-width: 850px; } .hero-kicker { display: flex; align-items: center; gap: 11px; margin-bottom: 28px; color: var(--lime); font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; } .hero-kicker::before { content: ""; width: 32px; height: 1px; background: var(--lime); box-shadow: 0 0 12px var(--lime-glow); } .hero-title { max-width: 900px; font-size: clamp(62px, 9vw, 144px); font-weight: 500; letter-spacing: -0.075em; line-height: 0.82; } .hero-title span { display: block; } .hero-title .accent { color: var(--lime); text-shadow: 0 0 30px rgba(217, 255, 63, 0.08); } .hero-description { max-width: 560px; margin-top: 34px; color: #a8aca8; font-size: 16px; line-height: 1.8; } .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; } .hero-meta { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 52px; padding-top: 20px; border-top: 1px solid var(--line); max-width: 750px; } .meta-item { display: flex; flex-direction: column; gap: 4px; } .meta-label { color: var(--muted-dark); font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; } .meta-value { color: #c5c8c5; font-size: 11px; letter-spacing: 0.04em; } .scroll-marker { position: absolute; bottom: 28px; left: 50%; z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--muted-dark); font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; transform: translateX(-50%); } .scroll-marker::after { content: ""; width: 1px; height: 35px; background: linear-gradient( to bottom, var(--lime), transparent ); } /* ------------------------------ CAPABILITIES ------------------------------ */ .capabilities { background: var(--black-soft); } .capability-header { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: end; margin-bottom: 70px; } .capability-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); } .capability-card { position: relative; min-height: 390px; padding: 30px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; background: linear-gradient( 145deg, rgba(255, 255, 255, 0.025), transparent 40% ); transition: transform 0.4s var(--ease), background 0.4s var(--ease); transform-style: preserve-3d; } .capability-card::before { content: ""; position: absolute; inset: 0; background: radial-gradient( circle at 80% 15%, rgba(217, 255, 63, 0.08), transparent 25% ); opacity: 0; transition: opacity 0.4s ease; } .capability-card:hover { background-color: rgba(255, 255, 255, 0.025); } .capability-card:hover::before { opacity: 1; } .card-number { position: relative; color: var(--lime); font-size: 10px; font-weight: 700; letter-spacing: 0.18em; } .card-icon { position: relative; width: 58px; height: 58px; margin-top: 70px; border: 1px solid rgba(217, 255, 63, 0.35); display: grid; place-items: center; color: var(--lime); } .card-icon::before, .card-icon::after { content: ""; position: absolute; width: 15px; height: 15px; border: 1px solid currentColor; } .card-icon::before { transform: rotate(45deg); } .card-icon::after { width: 5px; height: 5px; background: currentColor; } .card-title { position: relative; margin-top: 28px; font-size: 22px; font-weight: 500; letter-spacing: -0.03em; } .card-copy { position: relative; margin-top: 13px; color: var(--muted); font-size: 13px; line-height: 1.75; } .card-line { position: absolute; right: 30px; bottom: 30px; left: 30px; height: 1px; background: linear-gradient( 90deg, var(--lime), transparent ); opacity: 0.35; } /* ------------------------------ APPLICATIONS ------------------------------ */ .applications { background: var(--black); } .applications-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-bottom: 65px; } .applications-heading .section-copy { margin: 0; max-width: 450px; } .application-list { border-top: 1px solid var(--line); } .application { position: relative; display: grid; grid-template-columns: 0.25fr 0.9fr 1fr 0.2fr; gap: 30px; align-items: center; min-height: 180px; padding: 30px 0; border-bottom: 1px solid var(--line); overflow: hidden; transition: padding 0.45s var(--ease); } .application::before { content: ""; position: absolute; inset: 0; background: linear-gradient( 90deg, rgba(217, 255, 63, 0.07), transparent 60% ); opacity: 0; transform: translateX(-20px); transition: opacity 0.45s var(--ease), transform 0.45s var(--ease); pointer-events: none; } .application:hover { padding-left: 20px; padding-right: 20px; } .application:hover::before { opacity: 1; transform: translateX(0); } .application-number { position: relative; color: var(--muted-dark); font-family: monospace; font-size: 11px; } .application-title { position: relative; font-size: clamp(25px, 3vw, 42px); font-weight: 450; letter-spacing: -0.045em; line-height: 1; } .application-copy { position: relative; color: var(--muted); font-size: 13px; line-height: 1.7; } .application-arrow { position: relative; justify-self: end; width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid var(--line-bright); color: var(--lime); transition: transform 0.35s var(--ease), border-color 0.35s ease; } .application:hover .application-arrow { border-color: var(--lime); transform: rotate(45deg); } /* ------------------------------ TECHNOLOGY BAND ------------------------------ */ .technology-band { padding: 55px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #080909; } .technology-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; } .technology-label { color: var(--muted-dark); font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; white-space: nowrap; } .technology-items { display: flex; justify-content: space-between; gap: 40px; width: 100%; } .technology-items span { color: #777b77; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; } /* ------------------------------ CTA ------------------------------ */ .cta-section { position: relative; padding: 180px 0; overflow: hidden; background: radial-gradient( circle at 50% 100%, rgba(217, 255, 63, 0.12), transparent 35% ), var(--black); text-align: center; } .cta-grid { position: absolute; inset: 0; opacity: 0.3; background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px); background-size: 70px 70px; mask-image: radial-gradient(circle at center, black, transparent 70%); } .cta-inner { position: relative; z-index: 2; } .cta-title { max-width: 1050px; margin: 22px auto 0; font-size: clamp(50px, 8vw, 120px); font-weight: 500; letter-spacing: -0.065em; line-height: 0.9; } .cta-title span { color: var(--lime); } .cta-copy { max-width: 540px; margin: 30px auto 0; color: var(--muted); font-size: 15px; line-height: 1.8; } .cta-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 38px; } /* ------------------------------ FOOTER ------------------------------ */ .site-footer { border-top: 1px solid var(--line); background: #030303; } .footer-main { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 60px; padding: 80px 0; } .footer-brand-copy { max-width: 340px; margin-top: 24px; color: var(--muted); font-size: 13px; line-height: 1.8; } .footer-column-title { margin-bottom: 20px; color: var(--muted-dark); font-size: 10px; font-weight: 700; letter-spacing: 0.17em; text-transform: uppercase; } .footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: 11px; } .footer-links a { color: #aeb2ae; font-size: 12px; transition: color 0.25s ease; } .footer-links a:hover { color: var(--lime); } .footer-bottom { display: flex; justify-content: space-between; gap: 30px; padding: 22px 0; border-top: 1px solid var(--line); color: var(--muted-dark); font-size: 10px; letter-spacing: 0.04em; } /* ------------------------------ REVEAL ANIMATION ------------------------------ */ .reveal { opacity: 0; transform: translateY(25px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); } .reveal.is-visible { opacity: 1; transform: translateY(0); } .delay-1 { transition-delay: 0.08s; } .delay-2 { transition-delay: 0.16s; } .delay-3 { transition-delay: 0.24s; } .delay-4 { transition-delay: 0.32s; } /* ------------------------------ KEYFRAMES ------------------------------ */ @keyframes spin { to { transform: rotate(360deg); } } @keyframes float { 0%, 100% { transform: translateY(-50%) scale(1); } 50% { transform: translateY(-50%) scale(1.025); } } .hero-orb { animation: float 7s ease-in-out infinite; } /* ------------------------------ RESPONSIVE ------------------------------ */ @media (max-width: 1100px) { .nav-links { gap: 18px; } .nav-cta { display: none; } .capability-grid { grid-template-columns: repeat(2, 1fr); } .capability-card { min-height: 350px; } .application { grid-template-columns: 0.15fr 1fr 1fr 0.15fr; } .technology-items { flex-wrap: wrap; justify-content: flex-start; } } @media (max-width: 800px) { :root { --nav-height: 70px; } .container { width: min(calc(100% - 32px), var(--max-width)); } .section { padding: 95px 0; } .nav-links { position: fixed; inset: var(--nav-height) 0 auto 0; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 20px 16px 28px; border-bottom: 1px solid var(--line); background: rgba(5, 5, 5, 0.96); backdrop-filter: blur(20px); transform: translateY(-120%); opacity: 0; pointer-events: none; transition: transform 0.4s var(--ease), opacity 0.4s var(--ease); } .nav-links.active { transform: translateY(0); opacity: 1; pointer-events: auto; } .nav-links a { padding: 17px 0; border-bottom: 1px solid var(--line); } .mobile-toggle { display: grid; place-items: center; } .hero { min-height: 850px; } .hero-orb { width: 85vw; right: -25%; top: 57%; opacity: 0.55; } .hero-ring { width: 75vw; right: -12%; top: 58%; opacity: 0.55; } .hero-vignette { background: linear-gradient( 0deg, var(--black) 0%, rgba(5, 5, 5, 0.88) 45%, rgba(5, 5, 5, 0.45) 100% ); } .hero-title { font-size: clamp(58px, 16vw, 100px); } .hero-meta { gap: 20px; } .capability-header { grid-template-columns: 1fr; gap: 25px; margin-bottom: 45px; } .applications-heading { flex-direction: column; align-items: flex-start; } .application { grid-template-columns: 35px 1fr 50px; gap: 18px; min-height: 0; padding: 28px 0; } .application-copy { grid-column: 2 / 4; } .application-arrow { grid-column: 3; grid-row: 1; } .technology-inner { align-items: flex-start; flex-direction: column; } .technology-items { gap: 20px; } .footer-main { grid-template-columns: repeat(2, 1fr); gap: 45px 30px; } .footer-brand { grid-column: 1 / -1; } } @media (max-width: 560px) { .section-title { font-size: 50px; } .hero-title { font-size: 57px; } .hero-description { font-size: 14px; } .hero-actions { flex-direction: column; align-items: stretch; } .hero-actions .button { width: 100%; } .capability-grid { grid-template-columns: 1fr; } .capability-card { min-height: 330px; } .technology-items { display: grid; grid-template-columns: 1fr 1fr; } .technology-items span { white-space: normal; } .cta-section { padding: 120px 0; } .cta-title { font-size: 55px; } .footer-main { grid-template-columns: 1fr 1fr; } .footer-bottom { flex-direction: column; gap: 8px; } } @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } .reveal { opacity: 1; transform: none; } } &lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;!-- ========================================== NAVIGATION =========================================== --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;header class="site-nav" id="siteNav"&gt; &lt;div class="container nav-inner"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="#top" class="brand" aria-label="Light Stack Technologies home"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="brand-mark" aria-hidden="true"&gt;&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="brand-name"&gt;Light Stack&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;nav class="nav-links" id="navLinks"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#capabilities"&gt;Capabilities&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#applications"&gt;Applications&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#technology"&gt;Technology&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>href="mailto:info@lightstacktech.com"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>class="button button-primary nav-cta"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>Request Briefing</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>class="mobile-toggle"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>id="mobileToggle"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>type="button"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>aria-label="Open navigation"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>aria-expanded="false"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span&gt;&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/button&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
-<p class="p1"><span class="s1">&lt;main id="top"&gt;</span></p>
-<p class="p2"><span class="s1">&lt;!-- ==========================================</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>HERO</span></p>
-<p class="p2"><span class="s1">=========================================== --&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;section class="hero"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="hero-grid"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="hero-vignette"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="hero-orb"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="hero-ring"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="container hero-content"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="hero-copy"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="hero-kicker reveal"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Advanced Photonics Engineering</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h1 class="hero-title reveal delay-1"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;Engineering&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;the future&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="accent"&gt;of light.&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/h1&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="hero-description reveal delay-2"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Light Stack Technologies develops advanced optical platforms,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>precision beam-control systems, and engineered photonics</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>architectures for demanding scientific and industrial</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>environments.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="hero-actions reveal delay-3"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>href="mailto:info@lightstacktech.com"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>class="button button-primary"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Request a Technical Briefing</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>href="#capabilities"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>class="button button-secondary"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Explore Capabilities</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="hero-meta reveal delay-4"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="meta-item"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="meta-label"&gt;Focus&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="meta-value mono"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>Advanced Photonics</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="meta-item"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="meta-label"&gt;Discipline&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="meta-value mono"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>Systems Engineering</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="meta-item"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="meta-label"&gt;Approach&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="meta-value mono"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>Research → Integration</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="scroll-marker"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>Scroll</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;!-- ==========================================</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>CAPABILITIES</span></p>
-<p class="p2"><span class="s1">=========================================== --&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;section class="section capabilities" id="capabilities"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="capability-header"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="eyebrow reveal"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Core Capabilities</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title reveal delay-1"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Built around difficult problems.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="section-copy reveal delay-2"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>We combine optical engineering, mechanical design,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>thermal management, controls, and system integration</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>into purpose-built photonics platforms.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="capability-grid"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="capability-card reveal"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="card-number mono"&gt;01 / 04&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-icon" aria-hidden="true"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="card-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>High-Energy Platforms</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h3&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="card-copy"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Engineered optical architectures designed around</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>demanding performance, stability, and integration</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>requirements.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-line"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="capability-card reveal delay-1"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="card-number mono"&gt;02 / 04&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-icon" aria-hidden="true"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="card-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Precision Beam Control</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h3&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="card-copy"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Advanced optical and control architectures for</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>precise alignment, shaping, steering, and system</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>coordination.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-line"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="capability-card reveal delay-2"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="card-number mono"&gt;03 / 04&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-icon" aria-hidden="true"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="card-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Thermal Engineering</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h3&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="card-copy"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Integrated thermal and mechanical engineering</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>approaches that support reliable operation in</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>demanding environments.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-line"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="capability-card reveal delay-3"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="card-number mono"&gt;04 / 04&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-icon" aria-hidden="true"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="card-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>System Reliability</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h3&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="card-copy"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>System-level engineering focused on repeatability,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>maintainability, verification, and dependable</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>integration.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-line"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;!-- ==========================================</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>APPLICATIONS</span></p>
-<p class="p2"><span class="s1">=========================================== --&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;section class="section applications" id="applications"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="applications-heading"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="eyebrow reveal"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Applications</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title reveal delay-1"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Where advanced light becomes capability.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="section-copy reveal delay-2"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Purpose-built systems for environments where</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>optical performance, engineering discipline, and</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>integration matter.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="application-list"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="application reveal"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="application-number mono"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>01</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="application-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Scientific Research</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h3&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="application-copy"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Photonics platforms supporting experimental</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>environments, research infrastructure, and</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>advanced scientific instrumentation.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="application-arrow"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>↗</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="application reveal delay-1"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="application-number mono"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>02</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="application-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Aerospace &amp;amp; Advanced Systems</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h3&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="application-copy"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Compact, engineered optical architectures for</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>demanding aerospace and next-generation systems</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>environments.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="application-arrow"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>↗</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="application reveal delay-2"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="application-number mono"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>03</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="application-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Industrial Photonics</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h3&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="application-copy"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>Integrated photonics solutions for high-performance</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>manufacturing, inspection, sensing, and industrial</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>technology applications.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="application-arrow"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>↗</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;!-- ==========================================</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>TECHNOLOGY / TRUST BAND</span></p>
-<p class="p2"><span class="s1">=========================================== --&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;section class="technology-band" id="technology"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="container technology-inner"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="technology-label"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>Built for demanding environments</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="technology-items"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;National Laboratories&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;Research Institutions&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;Aerospace Programs&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;Advanced Manufacturing&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;Scientific Facilities&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;!-- ==========================================</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>CTA</span></p>
-<p class="p2"><span class="s1">=========================================== --&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;section class="cta-section" id="contact"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="cta-grid"&gt;&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="container cta-inner"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="eyebrow reveal"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>Start a Conversation</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="cta-title reveal delay-1"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>Push the limits of</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;photonics.&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/h2&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="cta-copy reveal delay-2"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>Tell us what you're building, what you're trying to</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>solve, and where conventional approaches stop being</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>enough.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="cta-actions reveal delay-3"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>href="mailto:info@lightstacktech.com"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>class="button button-primary"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Contact Light Stack</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>href="mailto:info@lightstacktech.com?subject=Technical%20Briefing%20Request"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>class="button button-secondary"</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Request Technical Briefing</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
-<p class="p1"><span class="s1">&lt;!-- ========================================== FOOTER =========================================== --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;footer class="site-footer"&gt;</span></p>
-<p class="p2"><span class="s1">&lt;div class="container footer-main"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="footer-brand"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#top" class="brand"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span class="brand-mark" aria-hidden="true"&gt;&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span class="brand-name"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Light Stack</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="footer-brand-copy"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>Advanced photonics engineering for scientific,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>industrial, and next-generation technology systems.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="footer-column"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-column-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>Capabilities</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-links"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#capabilities"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Optical Platforms</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#capabilities"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Beam Control</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#capabilities"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Thermal Engineering</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#capabilities"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>System Reliability</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="footer-column"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-column-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>Applications</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-links"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#applications"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Scientific Research</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#applications"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Aerospace Systems</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#applications"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Industrial Photonics</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="footer-column"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-column-title"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>Company</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-links"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#technology"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Technology</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="mailto:info@lightstacktech.com"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Contact</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="mailto:info@lightstacktech.com?subject=Technical%20Briefing%20Request"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>Request Briefing</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;div class="container footer-bottom"&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>© &lt;span id="year"&gt;&lt;/span&gt; Light Stack Technologies.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>All rights reserved.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;span class="mono"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>ENGINEERED FOR THE EDGE OF POSSIBILITY</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/span&gt;</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/footer&gt;</span></p>
-<p class="p1"><span class="s1">&lt;!-- ========================================== JAVASCRIPT =========================================== --&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script&gt; (() =&gt; { "use strict"; const nav = document.getElementById("siteNav"); const mobileToggle = document.getElementById("mobileToggle"); const navLinks = document.getElementById("navLinks"); const year = document.getElementById("year"); /* ---------------------------------------- Current year ---------------------------------------- */ if (year) { year.textContent = new Date().getFullYear(); } /* ---------------------------------------- Navigation scroll state ---------------------------------------- */ const updateNavigation = () =&gt; { if (!nav) return; nav.classList.toggle( "scrolled", window.scrollY &gt; 25 ); }; updateNavigation(); window.addEventListener( "scroll", updateNavigation, { passive: true } ); /* ---------------------------------------- Mobile navigation ---------------------------------------- */ const closeMobileMenu = () =&gt; { if (!mobileToggle || !navLinks) return; navLinks.classList.remove("active"); document.body.classList.remove("menu-open"); mobileToggle.setAttribute( "aria-expanded", "false" ); }; if (mobileToggle &amp;&amp; navLinks) { mobileToggle.addEventListener("click", () =&gt; { const isOpen = navLinks.classList.toggle("active"); document.body.classList.toggle( "menu-open", isOpen ); mobileToggle.setAttribute( "aria-expanded", String(isOpen) ); }); navLinks .querySelectorAll("a") .forEach((link) =&gt; { link.addEventListener( "click", closeMobileMenu ); }); } /* ---------------------------------------- Reveal on scroll ---------------------------------------- */ const revealElements = document.querySelectorAll(".reveal"); if ("IntersectionObserver" in window) { const observer = new IntersectionObserver( (entries, observerInstance) =&gt; { entries.forEach((entry) =&gt; { if (!entry.isIntersecting) { return; } entry.target.classList.add( "is-visible" ); observerInstance.unobserve( entry.target ); }); }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" } ); revealElements.forEach((element) =&gt; { observer.observe(element); }); } else { revealElements.forEach((element) =&gt; { element.classList.add("is-visible"); }); } /* ---------------------------------------- Smooth anchor scrolling ---------------------------------------- */ document .querySelectorAll('a[href^="#"]') .forEach((anchor) =&gt; { anchor.addEventListener("click", (event) =&gt; { const targetId = anchor.getAttribute("href"); if ( !targetId || targetId === "#" ) { return; } const target = document.querySelector(targetId); if (!target) { return; } event.preventDefault(); const offset = nav ? nav.offsetHeight : 0; const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset; window.scrollTo({ top: targetPosition, behavior: "smooth" }); }); }); /* ---------------------------------------- Hero mouse parallax ---------------------------------------- */ const hero = document.querySelector(".hero"); const heroOrb = document.querySelector(".hero-orb"); const heroRing = document.querySelector(".hero-ring"); const reduceMotion = window.matchMedia( "(prefers-reduced-motion: reduce)" ).matches; if ( hero &amp;&amp; heroOrb &amp;&amp; heroRing &amp;&amp; !reduceMotion ) { hero.addEventListener( "mousemove", (event) =&gt; { const rect = hero.getBoundingClientRect(); const x = (event.clientX - rect.left) / rect.width - 0.5; const y = (event.clientY - rect.top) / rect.height - 0.5; heroOrb.style.marginLeft = `${x * 22}px`; heroOrb.style.marginTop = `${y * 14}px`; heroRing.style.marginLeft = `${x * -14}px`; heroRing.style.marginTop = `${y * -10}px`; } ); } /* ---------------------------------------- Capability card tilt ---------------------------------------- */ const cards = document.querySelectorAll( ".capability-card" ); if (!reduceMotion) { cards.forEach((card) =&gt; { card.addEventListener( "mousemove", (event) =&gt; { if (window.innerWidth &lt; 900) { return; } const rect = card.getBoundingClientRect(); const x = event.clientX - rect.left; const y = event.clientY - rect.top; const rotateY = ((x / rect.width) - 0.5) * 4; const rotateX = ((y / rect.height) - 0.5) * -4; card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`; } ); card.addEventListener( "mouseleave", () =&gt; { card.style.transform = ""; } ); }); } /* ---------------------------------------- Escape closes mobile menu ---------------------------------------- */ document.addEventListener( "keydown", (event) =&gt; { if (event.key === "Escape") { closeMobileMenu(); } } ); /* ---------------------------------------- Close mobile menu on resize ---------------------------------------- */ window.addEventListener( "resize", () =&gt; { if (window.innerWidth &gt; 800) { closeMobileMenu(); } } ); })(); &lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt; &lt;/html&gt;</span></p>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Light Stack home">
+      <img src="assets/logo.png" alt="Light Stack">
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#capabilities">Products</a></li>
+        <li><a href="#applications">Applications</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a class="btn btn-primary" id="headerCta" href="#contact">Request Briefing</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">LIGHT STACK TECHNOLOGIES</p>
+        <h1>The Future of<br>High-Power Lasers</h1>
+        <p class="lede">Lasers engineered for the most demanding applications on Earth — and beyond.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">
+            Request Briefing
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#applications">Explore Applications</a>
+        </div>
+      </div>
+
+      <div class="hero-figure" aria-hidden="true">
+        <svg viewBox="0 0 300 300">
+          <circle cx="150" cy="150" r="120" fill="none" stroke="#eceeff" stroke-width="1"/>
+          <g stroke="#c3c8f7" stroke-width="1.5">
+            <line x1="150" y1="150" x2="150" y2="18"/>
+            <line x1="150" y1="150" x2="150" y2="282"/>
+            <line x1="150" y1="150" x2="18" y2="150"/>
+            <line x1="150" y1="150" x2="282" y2="150"/>
+            <line x1="150" y1="150" x2="235" y2="65"/>
+            <line x1="150" y1="150" x2="65" y2="235"/>
+            <line x1="150" y1="150" x2="235" y2="235"/>
+            <line x1="150" y1="150" x2="65" y2="65"/>
+          </g>
+          <g stroke="var(--blue)" stroke-width="2.5">
+            <line x1="150" y1="150" x2="150" y2="30"/>
+            <line x1="150" y1="150" x2="150" y2="270"/>
+            <line x1="150" y1="150" x2="30" y2="150"/>
+            <line x1="150" y1="150" x2="270" y2="150"/>
+          </g>
+          <circle cx="150" cy="150" r="7" fill="var(--blue)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="section" id="capabilities">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">CAPABILITIES</p>
+        <h2>Engineered for the Extreme</h2>
+        <p>From petawatt-class fusion drivers to precision directed-energy platforms, our systems operate where others cannot.</p>
+      </div>
+
+      <div class="cap-grid">
+
+        <div class="cap-card is-featured">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 2v6M12 16v6M2 12h6M16 12h6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2"/>
+            </svg>
+          </div>
+          <h3>Fusion-Class Power</h3>
+          <p>Petawatt and multi-kilojoule laser architectures designed for inertial confinement fusion drivers and ignition experiments.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 2 21 7v10l-9 5-9-5V7l9-5Z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <h3>Defense &amp; Directed Energy</h3>
+          <p>High-average-power laser systems qualified for directed-energy programs and classified defense applications.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="2" y="10" width="5" height="4" rx="0.5"/>
+              <line x1="7" y1="12" x2="20" y2="12"/>
+              <circle cx="21" cy="12" r="2"/>
+            </svg>
+          </div>
+          <h3>Precision Beam Control</h3>
+          <p>Sub-diffraction beam shaping, adaptive optics, and wavefront correction at extreme power levels.</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 2 4 5v6c0 5 3.4 8.4 8 11 4.6-2.6 8-6 8-11V5l-8-3Z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Reliability at Scale</h3>
+          <p>Mission-critical uptime with MIL-SPEC qualification and national lab certification standards.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATIONS -->
+  <section class="applications" id="applications">
+    <div class="wrap">
+
+      <div class="app-row">
+        <div class="app-copy">
+          <p class="app-number">APPLICATION 01</p>
+          <h3>Inertial Confinement Fusion</h3>
+          <p class="body">Light Stack laser systems serve as a driver architecture for ICF experiments at national ignition facilities. Our multi-beam, high-uniformity platforms deliver the precise energy-deposition profiles required to compress fusion targets toward ignition conditions.</p>
+          <div class="app-stat">Pulse durations from 1 ns to 10 ns — energies up to 2 MJ per shot.</div>
+          <a class="app-link" href="#contact">
+            Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="app-figure">
+          <svg viewBox="0 0 200 200">
+            <g stroke="#c3c8f7" stroke-width="1.2">
+              <line x1="100" y1="100" x2="100" y2="20"/>
+              <line x1="100" y1="100" x2="100" y2="180"/>
+              <line x1="100" y1="100" x2="20" y2="100"/>
+              <line x1="100" y1="100" x2="180" y2="100"/>
+              <line x1="100" y1="100" x2="150" y2="50"/>
+              <line x1="100" y1="100" x2="50" y2="150"/>
+              <line x1="100" y1="100" x2="150" y2="150"/>
+              <line x1="100" y1="100" x2="50" y2="50"/>
+            </g>
+            <g stroke="var(--blue)" stroke-width="2">
+              <line x1="100" y1="100" x2="100" y2="35"/>
+              <line x1="100" y1="100" x2="100" y2="165"/>
+              <line x1="100" y1="100" x2="35" y2="100"/>
+              <line x1="100" y1="100" x2="165" y2="100"/>
+            </g>
+            <circle cx="100" cy="100" r="18" fill="none" stroke="var(--blue)" stroke-width="1.5"/>
+            <circle cx="100" cy="100" r="3" fill="var(--blue)"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="app-row reverse">
+        <div class="app-copy">
+          <p class="app-number">APPLICATION 02</p>
+          <h3>Directed Energy &amp; Defense</h3>
+          <p class="body">From high-energy laser platforms to counter-UAS systems, our defense-grade laser architectures are designed for operational environments — ruggedized, thermally managed, and qualified to MIL-STD-810.</p>
+          <div class="app-stat">Average powers from 10 kW to 300 kW — continuous-wave and pulsed modes.</div>
+          <a class="app-link" href="#contact">
+            Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="app-figure">
+          <svg viewBox="0 0 220 140">
+            <rect x="18" y="30" width="184" height="80" fill="none" stroke="#e4e4ea" stroke-width="1" stroke-dasharray="3 4"/>
+            <rect x="30" y="60" width="26" height="20" fill="none" stroke="var(--blue)" stroke-width="1.6"/>
+            <line x1="56" y1="70" x2="175" y2="70" stroke="var(--blue)" stroke-width="2"/>
+            <circle cx="185" cy="70" r="9" fill="none" stroke="var(--blue)" stroke-width="1.6"/>
+            <circle cx="185" cy="70" r="2.5" fill="var(--blue)"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA + FOOTER -->
+  <section class="cta" id="contact">
+    <div class="wrap">
+      <div class="cta-top">
+        <div>
+          <h2>Ready to push the limits of photonic power?</h2>
+          <hr class="cta-rule">
+        </div>
+        <div class="cta-copy">
+          <p>Our engineering team works directly with program managers, chief scientists, and acquisition leads.</p>
+          <a class="btn btn-primary" href="mailto:briefings@lightstack.example">
+            Request a Technical Briefing
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <p class="cta-note">Cleared personnel available for classified program discussions.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer" id="about">
+      <div class="wrap">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <a class="logo" href="#top" aria-label="Light Stack home">
+              <img src="assets/logo.png" alt="Light Stack">
+            </a>
+            <p>Pioneering the frontier of high-energy photonics for fusion, defense, and next-generation scientific applications.</p>
+            <hr class="cta-rule">
+          </div>
+
+          <div class="footer-col">
+            <h4>PRODUCTS</h4>
+            <ul>
+              <li><a href="#capabilities">Fusion-Class Lasers</a></li>
+              <li><a href="#capabilities">Defense Systems</a></li>
+              <li><a href="#capabilities">OEM Solutions</a></li>
+              <li><a href="#capabilities">Beam Control</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>APPLICATIONS</h4>
+            <ul>
+              <li><a href="#applications">Inertial Confinement Fusion</a></li>
+              <li><a href="#applications">Directed Energy</a></li>
+              <li><a href="#applications">Scientific Research</a></li>
+              <li><a href="#applications">Industrial</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#capabilities">Technology</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Request Briefing</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 Light Stack Technologies. All rights reserved.</span>
+          <span>ITAR CONTROLLED — EXPORT RESTRICTED</span>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+</main>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.style.display === 'flex';
+    links.style.display = open ? 'none' : 'flex';
+    toggle.setAttribute('aria-expanded', String(!open));
+  });
+</script>
+
 </body>
 </html>
